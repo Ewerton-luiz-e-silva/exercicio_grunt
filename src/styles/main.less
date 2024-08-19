@@ -1,0 +1,29 @@
+// main.less
+
+@primary-color: #4CAF50;
+@text-color: #FFFFFF;
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: @primary-color;
+    color: @text-color;
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: @text-color;
+        background-color: darken(@primary-color, 10%);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: darken(@primary-color, 20%);
+        }
+    }
+}
